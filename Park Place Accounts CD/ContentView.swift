@@ -38,11 +38,11 @@ struct ContentView: View {
                             }
                         )
                         .padding()
-                        
+                        // Hello World
                         NavigationLink(
                             destination: OrdersView(),
                             label: {
-                                Text("View Orders")
+                                Text("View Your Orders")
                                     .font(.system(size:30))
                                     .fontWeight(.bold)
                                     .foregroundColor(Color.white)
