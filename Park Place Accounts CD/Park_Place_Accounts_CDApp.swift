@@ -9,12 +9,18 @@ import SwiftUI
 
 @main
 struct Park_Place_Accounts_CDApp: App {
-    let persistenceController = PersistenceController.shared
+
+    @StateObject private var dataController = DataController()
+
+//    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
+
+
+
 }

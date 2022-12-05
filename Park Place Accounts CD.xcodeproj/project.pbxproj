@@ -12,7 +12,11 @@
 		7F1E687A28E241FC0066D864 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1E687928E241FC0066D864 /* Assets.xcassets */; };
 		7F1E687D28E241FC0066D864 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F1E687C28E241FC0066D864 /* Preview Assets.xcassets */; };
 		7F1E687F28E241FC0066D864 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E687E28E241FC0066D864 /* Persistence.swift */; };
-		7F1E688228E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E688028E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodeld */; };
+		7F1E688E28E24CD50066D864 /* TakingOrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E688D28E24CD50066D864 /* TakingOrdersView.swift */; };
+		7F1E689028E24D200066D864 /* TotalsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E688F28E24D200066D864 /* TotalsView.swift */; };
+		7F1E689228E259D80066D864 /* OrdersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E689128E259D80066D864 /* OrdersView.swift */; };
+		7F1E689428E264F20066D864 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1E689328E264F20066D864 /* DataController.swift */; };
+		7FC6370128E3D7120054AB48 /* OrderItem.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7FC636FF28E3D7120054AB48 /* OrderItem.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,7 +26,11 @@
 		7F1E687928E241FC0066D864 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F1E687C28E241FC0066D864 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7F1E687E28E241FC0066D864 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
-		7F1E688128E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Park_Place_Accounts_CD.xcdatamodel; sourceTree = "<group>"; };
+		7F1E688D28E24CD50066D864 /* TakingOrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakingOrdersView.swift; sourceTree = "<group>"; };
+		7F1E688F28E24D200066D864 /* TotalsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalsView.swift; sourceTree = "<group>"; };
+		7F1E689128E259D80066D864 /* OrdersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersView.swift; sourceTree = "<group>"; };
+		7F1E689328E264F20066D864 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		7FC6370028E3D7120054AB48 /* OrderItem.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OrderItem.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +64,14 @@
 			isa = PBXGroup;
 			children = (
 				7F1E687528E241FB0066D864 /* Park_Place_Accounts_CDApp.swift */,
+				7F1E689328E264F20066D864 /* DataController.swift */,
 				7F1E687728E241FB0066D864 /* ContentView.swift */,
+				7F1E688D28E24CD50066D864 /* TakingOrdersView.swift */,
+				7F1E689128E259D80066D864 /* OrdersView.swift */,
+				7F1E688F28E24D200066D864 /* TotalsView.swift */,
 				7F1E687928E241FC0066D864 /* Assets.xcassets */,
 				7F1E687E28E241FC0066D864 /* Persistence.swift */,
-				7F1E688028E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodeld */,
+				7FC636FF28E3D7120054AB48 /* OrderItem.xcdatamodeld */,
 				7F1E687B28E241FC0066D864 /* Preview Content */,
 			);
 			path = "Park Place Accounts CD";
@@ -144,9 +156,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F1E687F28E241FC0066D864 /* Persistence.swift in Sources */,
+				7FC6370128E3D7120054AB48 /* OrderItem.xcdatamodeld in Sources */,
 				7F1E687828E241FB0066D864 /* ContentView.swift in Sources */,
-				7F1E688228E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodeld in Sources */,
+				7F1E688E28E24CD50066D864 /* TakingOrdersView.swift in Sources */,
+				7F1E689428E264F20066D864 /* DataController.swift in Sources */,
+				7F1E689028E24D200066D864 /* TotalsView.swift in Sources */,
 				7F1E687628E241FB0066D864 /* Park_Place_Accounts_CDApp.swift in Sources */,
+				7F1E689228E259D80066D864 /* OrdersView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +298,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,6 +327,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,13 +365,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		7F1E688028E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodeld */ = {
+		7FC636FF28E3D7120054AB48 /* OrderItem.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				7F1E688128E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodel */,
+				7FC6370028E3D7120054AB48 /* OrderItem.xcdatamodel */,
 			);
-			currentVersion = 7F1E688128E241FC0066D864 /* Park_Place_Accounts_CD.xcdatamodel */;
-			path = Park_Place_Accounts_CD.xcdatamodeld;
+			currentVersion = 7FC6370028E3D7120054AB48 /* OrderItem.xcdatamodel */;
+			path = OrderItem.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
