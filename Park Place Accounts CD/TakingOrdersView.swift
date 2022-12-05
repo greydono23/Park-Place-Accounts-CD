@@ -169,6 +169,7 @@ struct TakingOrdersView: View {
     }
     
     func confirmTap() {
+        PersistanceService.persistanceService.accounts[accountValue] = priceValue
         return
     }
     
