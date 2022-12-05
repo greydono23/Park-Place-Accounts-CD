@@ -18,6 +18,9 @@ struct Park_Place_Accounts_CDApp: App {
         WindowGroup {
             ContentView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
+                .onAppear(){
+                    PersistanceService.persistanceService.configure()
+                }
         }
     }
 
