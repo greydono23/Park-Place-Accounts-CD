@@ -102,6 +102,7 @@ struct ContentView: View {
                 .padding(.bottom, 50.0)
                 .frame(width: nil)
             }
+            .navigationViewStyle(.stack)
             }
             
             
